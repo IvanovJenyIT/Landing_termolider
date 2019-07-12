@@ -11,33 +11,6 @@ export default class Forms extends React.Component{
     state = {
       telephon:"",
       email:"",
-      telephonError: "",
-      emailError:""
-    };
-
-    validae = () => {
-        let telephonError= "";
-        let emailError="";
-
-
-        if (this.state.telephon >=0 || this.state.telephon <= 9)
-        {
-            telephonError = 'неверный телефон'
-        }
-
-        if(!this.state.email.includes('@')){
-            emailError = 'неверный адрес электронной почты';
-        }
-
-        if (emailError || telephonError){
-            this.setState({
-                emailError,
-                telephonError
-            });
-            return false;
-        }
-
-        return true;
     };
 
     handleChange = (e) => {
@@ -49,12 +22,9 @@ export default class Forms extends React.Component{
     async handleSubmit (e) {
         e.preventDefault();
 
-
         this.setState({
             telephon:"",
             email:"",
-            telephonError: "",
-            emailError:""
         });
 
         const {email, telephon} = this.state;
