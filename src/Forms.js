@@ -30,7 +30,7 @@ export default class Forms extends React.Component{
 
         const {email, telephon} = this.state;
 
-        await axios.post('/api/form', {
+        await axios.post('/', {
             telephon
             ,email})
     }

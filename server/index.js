@@ -1,13 +1,13 @@
 const expess = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require("nodemailer");
-const app = expess();
+const app = expess()
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
-app.post('/api/form',(req)=>{
-    nodemailer.createTestAccount(()=>{
+app.post('/',(req,res)=>{
+    nodemailer.createTestAccount((err, account)=>{
 
         let transporter = nodemailer.createTransport({
             service: 'gmail',
@@ -36,15 +36,8 @@ app.post('/api/form',(req)=>{
     })
 });
 
-const PORT = process.env.NODE_ENV === 'production'
-    ? 'https://termolider.herokuapp.com/'
-    : 5000;
+const  PORT = process.env.PORT || 5000;
 
 app.listen(PORT, ()=> {
     console.log(PORT)
 });
-
-
-
-
-
