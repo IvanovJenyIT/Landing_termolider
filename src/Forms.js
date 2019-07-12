@@ -1,42 +1,92 @@
 import React from 'react';
-import sendmail from 'sendmail';
 
 export default class Forms extends React.Component{
-    constructor(props) {
-        super(props);
-        this.state = {value: ''};
+    state = {
+      telephon:"",
+      email:"",
+      telephonError: "",
+      emailError:""
+    };
 
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
+    validae = () => {
+        let telephonError= "";
+        let emailError="";
 
-    handleChange(event) {
-        this.setState({value: event.target.value});
-    }
 
-    handleSubmit(event) {
-        event.preventDefault();
+        if (this.state.telephon >=0 || this.state.telephon <= 9)
+        {
+            telephonError = 'неверный телефон'
+        }
+
+        if(!this.state.email.includes('@')){
+            emailError = 'неверный адрес электронной почты';
+        }
+
+        if (emailError || telephonError){
+            this.setState({
+                emailError,
+                telephonError
+            });
+            return false;
+        }
+
+        return true;
+    };
+
+    handleChange = (e) => {
         this.setState({
-            value: ''
+            [e.target.name]: e.target.value
+        })
+    };
+
+    handleSubmit = (e) => {
+      e.preventDefault();
+        this.setState({
+            telephon:"",
+            email:"",
+            telephonError: "",
+            emailError:""
         });
+        console.log(this.state)
 
-        sendmail({
-            from: 'no-reply@yourdomain.com',
-            to: 'jenyit@ya.ru',
-            subject: this.state.value,
-            html: 'Mail of test sendmail ',
-        }, function(err, reply) {});
-    }
+    };
 
-    render() {
-        return (
+    render(){
+        return(
             <form onSubmit={this.handleSubmit}>
-                <label>
-                    Имя:
-                    <input type="text" value={this.state.value} onChange={this.handleChange} />
-                </label>
-                <input type="submit" value="Отправить" />
+                <p>
+                    <input
+                        type="number"
+                        name="telephon"
+                        placeholder="Телефон"
+
+
+                        value={this.state.telephon}
+                        onChange={this.handleChange}
+                    />
+                </p>
+
+                <div style={{color: "red", fontSize:15}}>
+                    {this.state.telephonError}
+                 </div>
+
+                <p>
+                    <input
+                        type="email"
+
+                        name="email"
+                        placeholder="Email"
+                        value={this.state.email}
+                        onChange={this.handleChange}
+                    />
+                </p>
+
+                <div style={{color: "red", fontSize:15}}>
+                    {this.state.emailError}
+                 </div>
+
+                <p><button type="submit" p>Отправить</button></p>
             </form>
-        );
+        )
     }
 }
