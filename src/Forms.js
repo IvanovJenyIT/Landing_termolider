@@ -1,9 +1,10 @@
 import React from 'react';
 import axios from 'axios';
 
+
 export default class Forms extends React.Component{
     constructor(){
-        super()
+        super();
 
         this.handleSubmit = this.handleSubmit.bind(this)
     }

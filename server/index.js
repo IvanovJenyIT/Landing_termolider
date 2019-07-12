@@ -36,7 +36,9 @@ app.post('/api/form',(req)=>{
     })
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.NODE_ENV === 'production'
+    ? 'https://termolider.herokuapp.com/'
+    : 5000;
 
 app.listen(PORT, ()=> {
     console.log(PORT)
