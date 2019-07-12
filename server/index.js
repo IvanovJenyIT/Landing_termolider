@@ -36,7 +36,7 @@ app.post('/api/form',(req,res)=>{
     })
 });
 
-const PORT = process.env.PORT || "https://termolider.herokuapp.com";
+const PORT = process.env.PUBLIC_URL || "https://termolider.herokuapp.com";
 
 app.listen(PORT, ()=> {
     console.log(PORT)
