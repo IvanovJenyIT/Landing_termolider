@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Forms from './Forms'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         >
           Learn React 2
         </a>
+        <Forms/>
       </header>
     </div>
   );
