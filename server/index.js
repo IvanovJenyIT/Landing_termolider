@@ -1,13 +1,13 @@
 const expess = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require("nodemailer");
-const app = expess()
+const app = expess();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
-app.post('/',(req,res)=>{
-    nodemailer.createTestAccount((err, account)=>{
+app.post('/',(req)=>{
+    nodemailer.createTestAccount(()=>{
 
         let transporter = nodemailer.createTransport({
             service: 'gmail',

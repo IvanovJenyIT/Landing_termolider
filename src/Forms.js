@@ -3,13 +3,7 @@ import axios from 'axios';
 
 
 export default class Forms extends React.Component{
-    constructor(){
-        super();
-
-        this.handleSubmit = this.handleSubmit.bind(this)
-    }
-
-    state = {
+   state = {
       telephon:"",
       email:"",
     };
@@ -20,7 +14,7 @@ export default class Forms extends React.Component{
         });
     };
 
-    async handleSubmit (e) {
+    handleSubmit = (e) => {
         e.preventDefault();
 
         this.setState({
@@ -30,10 +24,10 @@ export default class Forms extends React.Component{
 
         const {email, telephon} = this.state;
 
-        await axios.post('/', {
+        axios.post('/', {
             telephon
             ,email})
-    }
+    };
 
     render(){
         return(
