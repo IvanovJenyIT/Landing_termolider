@@ -6,8 +6,8 @@ const app = expess();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
-app.post('/api/form',(req,res)=>{
-    nodemailer.createTestAccount((err, account)=>{
+app.post('/api/form',(req)=>{
+    nodemailer.createTestAccount(()=>{
 
         let transporter = nodemailer.createTransport({
             service: 'gmail',
@@ -36,7 +36,7 @@ app.post('/api/form',(req,res)=>{
     })
 });
 
-const PORT = process.env.PUBLIC_URL || "https://termolider.herokuapp.com";
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, ()=> {
     console.log(PORT)
