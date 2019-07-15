@@ -1,28 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Forms from './Forms'
+import React, {Component} from 'react';
+import Logo from "./components/logo";
+import Menu from "./components/menu";
+import FirstList from './components/firstList';
+import UTP from './components/utp';
+import FoYou from './components/foyou';
+import NineYer from './components/nineyer';
+import Goods from './components/goods';
+import Foto from './components/foto';
+import Aboute from './components/aboute';
+import Maps from './components/maps';
+import Copirait from './components/copirait';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React 2
-        </a>
-        <Forms/>
-      </header>
-    </div>
-  );
+import './style.css'
+
+
+export default class  App extends Component {
+
+       render() {
+                return (<div>
+                <Logo/>
+                <Menu/>
+                <FirstList/>
+                <UTP/>
+                <FoYou/>
+                <NineYer/>
+                <Goods />
+                <Foto/>
+                <Aboute/>
+                <Maps/>
+                <Copirait/>
+            </div>
+        )
+    }
 }
-
-export default App;

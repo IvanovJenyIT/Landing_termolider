@@ -1,0 +1,404 @@
+p{
+    font-size: 18px;
+}
+
+.color-blu{
+    color: #88c2e6;
+}
+
+.background-skyblu{
+    background-color:#9dd5f6;
+    border-top: 8px solid #0b68a9;
+}
+
+.background-blu1{
+    background-color:#0b68a9;
+}
+
+.background-blu2{
+    background-color:#0a5b93;
+}
+.background-blu3{
+    background-color:#16557c;
+}
+
+.background-pink{
+    background-color:#9dd5f6;
+}
+
+.background-maniblu{
+    background: linear-gradient(to left, #16557c, #0b68a9);
+}
+
+.text-white{
+    color: white;
+}
+
+.text-blu{
+    font-size: 30px;
+    font-weight: 600;
+    color: #0b68a9;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.text-whiteh1{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    }
+
+.text-blu:before{
+    content: url("/img/radiatorA.png");
+    margin-right: 15px;
+}
+
+.text-blu:after{
+    content: url("/img/radiatorA.png");
+    margin-left: 15px;
+}
+
+.text-whiteh1:after{
+    content: url("/img/radiatorC.png");
+    margin-left: 15px;
+}
+
+.text-whiteh1:before{
+    content: url("/img/radiatorC.png");
+    margin-right: 15px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.logo-img{
+    max-width: 30px;
+}
+
+.logo-img-minin{
+    max-width: 17px;
+    margin-right: 15px;
+}
+
+.logo{
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 600;
+}
+
+.no-padding {
+    padding-right: 0px;
+}
+
+.no-padding  p{
+    margin-bottom: 5px;
+}
+
+.margin-top{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contacty{
+    padding-top: 20px;
+}
+
+.contacty p{
+    font-size: 22px;
+    line-height: 15px;
+}
+
+.menu p{
+    padding: 0px 20px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.img-fon{
+    background-image: url("/img/family.jpg");
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
+@media screen and (max-width: 767px) {
+    .img-fon{background-color: #ddb091; background-image:none;}
+    .menu p {padding: 0px 5px 0px; font-size: 16px;}
+}
+
+.img-fon1 {
+    background-image: url("/img/dety.jpg");
+    background-size: cover;
+    background-position: 50% 39%;
+    min-height: 580px;
+    position: relative;
+}
+
+.mb-3, .my-3 {
+    margin-bottom: 0rem !important;
+}
+
+.img-blok img{
+    max-width: 350px;
+}
+
+.img-blok{
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+.slogan{
+    font-size: 50px;
+    font-weight: 600;
+    font-style: oblique;
+    font-family: Monotype Corsiva;
+    color: #4b4646;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.foyou .mini{display: none;}
+
+@media screen and (max-width: 767px){
+    .slogan{font-size: 40px;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;}
+    .img-blok{text-align: center;}
+    .background-maniblu  .container {width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+        max-width: 100%;}
+    .foyou .big{display: none;}
+    .foyou .mini{display: block;}
+    .aboute div + div {padding-left: 15px!important;}
+}
+
+.conteiner-slider{
+    padding-top: 0px;
+}
+
+.utp div{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    font-size: 20px;
+}
+
+.utp i{
+    margin-right: 10px;
+}
+
+.foyou ul{
+    list-style: none;
+    font-size: 24px;
+    padding: 30px;
+}
+
+.foyou ul li{
+    margin-bottom: 10px;
+}
+
+.foyou i{
+    line-height: 20px;
+    vertical-align: 0%;
+    font-size: 20px;
+    color: #0b68a9;
+    margin: 0px 10px -1px 0px;
+}
+
+.aboute i{
+    color: #0b68a9;
+    margin-right: 16px;
+    max-width: 15px;
+}
+
+.aboute, .nineyer-blok{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.foyou, .goods{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.aboute div + div {
+    padding-left: 60px;
+}
+
+.copirait{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nineyer{
+    background-image: url("/img/logo1-2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 7%;
+}
+
+.nineyer .kube span{
+    font-size: 26px;
+    color: #e01e1f;
+    font-weight: 600;
+}
+
+.nineyer .nine{
+    font-size: 120px;
+    font-weight: 600;
+    color: #e01e1f;
+    text-shadow: -5px 3px 4px #565050;
+}
+
+.nineyer .nine-text p{
+    color: #0b68a9;
+    font-weight: 600;
+    line-height: 26px;
+    margin: auto 0;
+    font-size: 22px;
+}
+
+.nineyer .nine-text span{
+    font-size: 30px;
+}
+
+.nineyer .nine-text{
+    min-height: 220px;
+    display: flex;
+}
+
+.nineyer .kube div{
+    padding: 10px;
+    font-size: 22px;
+}
+
+.nineyer .kube div{
+    box-shadow: 4px 3px 6px rgba(122,122,122,0.5);
+    border-right: 2px solid #919499;
+    border-bottom: 2px solid #919499;
+    padding: 20px;
+    background-color: #f3f3f5;
+    margin: 6px;
+}
+
+.nineyer .kube .col-md-6{
+    max-width: 46%;
+}
+
+.btn-light {
+    color: #212529;
+    background-color: #e01e1f;
+    border-color: #e01e1f;
+    color: white;
+    padding: 7px 30px;
+}
+
+.forma{
+    background-color: #dbae8f;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0px auto;
+}
+
+.forma input{
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    margin: 5px 10px 12px 0px;
+    height: 40px;
+}
+
+.forma button{
+    width: 100%;
+}
+
+.width100 .forma {
+    background-color: #756661;
+    padding: 10px 26px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 100%;
+    position: absolute;
+    top: 75%;
+}
+
+.width100 h3 {
+    font-size: 22px;
+    color: white;
+}
+
+.width100 .forma input {
+    width: 31%;
+    border: none;
+    border-radius: 2px;
+    margin: 5px 10px 12px 0px;
+    height: 40px;
+    float: left;
+}
+
+.width100 .forma button {
+    width: 31%;
+    margin: 6px 10px 12px 0px;
+    padding: 7px 6px;
+}
+
+.img-fon1 .forma{
+    left: 50%;
+    margin-left: -300px;
+}
+
+.img-fon .width100 .forma {
+    top: 50%;
+}
+
+.img-fon .width100 .forma input {
+    width: 47%;
+}
+
+.img-fon .width100 .forma button {
+    width: 96%;
+}
+
+@media screen and (max-width: 991px) {
+    .img-fon .width100 .forma input {width: 100%;}
+    .img-fon .width100 .forma {top: 44%;}
+}
+
+@media screen and (max-width: 634px) {
+    .img-fon1 .forma {left: 0; margin-left: 0px;}
+
+}
+
+@media screen and (max-width: 564px) {
+    .width100 .forma input {width: 47%;}
+    .width100 .forma button {width: 96%;}
+    .width100 .forma {top: 68%;}
+}
+
+@media screen and (max-width: 459px) {
+    .menu p{font-size: 14px;}
+}
+
+@media screen and (max-width: 384px) {
+    .width100 .forma input {width: 100%;}
+    .width100 .forma button {width: 100%;}
+}
+
+
+
+

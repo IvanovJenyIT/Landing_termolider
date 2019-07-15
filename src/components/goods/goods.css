@@ -1,0 +1,77 @@
+.goodsBlok{
+    padding-right: 0px;
+}
+
+.goodsBlok ul{
+    list-style: none;
+    margin-top: 40px;
+}
+
+.goodsBlok ul li{
+    font-size: 22px;
+    padding: 15px;
+    min-height: 80px;
+    color: white;
+    cursor: pointer
+}
+
+.goodsBlok ul li.active {
+    background-color: white;
+    border-radius: 10px 0px 0px 10px;
+    color: #0b68a9;
+}
+
+.visibiliti{
+    background-color: white;
+    padding: 40px;
+    border-radius: 0px 20px 20px 20px;
+    margin-top: 40px;
+}
+
+.visibiliti img{
+    max-width: 50%;
+    float: left;
+    margin-right: 15px;
+}
+
+.visibiliti .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.mini-goods{
+    width: 60px;
+    margin-right: 10px;
+    float: left;
+}
+
+.goods-mini{
+    display: none;
+}
+
+@media screen and (max-width: 1199px) {
+    .goodsBlok ul li {font-size: 19px;}
+    .visibiliti .title {font-size: 28px;}
+}
+
+@media screen and (max-width: 997px) {
+    .goods-max{display: none;}
+    .goods-mini{display: block;}
+}
+
+.goods-mini .blok{
+    background-color: white;
+    border-left: 10px solid #0b68a9;
+    border-bottom: 10px solid #0b68a9;
+    padding: 30px;
+}
+
+
+.goods-mini h3 {
+    font-size: 26px;
+}
+
+.goods-mini img{
+    max-width: 100%;
+}
