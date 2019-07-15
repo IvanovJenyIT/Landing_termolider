@@ -2,7 +2,7 @@
   "name": "termalider_landing",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://192.168.1.6:5000",
+  "proxy": "http://localhost:4000",
   "dependencies": {
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
@@ -16,11 +16,11 @@
   },
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "nodemon ./src/server.js",
+    "server": "nodemon ./server/index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "client": "react-scripts start --prefix client"
+    "client": "react-scripts start --prefix termalider_landing"
   },
   "eslintConfig": {
     "extends": "react-app"

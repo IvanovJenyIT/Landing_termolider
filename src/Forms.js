@@ -24,7 +24,7 @@ export default class Forms extends React.Component{
 
         const {email, telephon} = this.state;
 
-        axios.post('/', {
+        axios.post('/api/form', {
             telephon
             ,email})
     };
