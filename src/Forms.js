@@ -31,7 +31,7 @@ export default class Forms extends React.Component{
 
     render(){
         return(
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} name="contact"  method="POST" data-netlify="true">
                 <p>
                     <input
                         type="number"
@@ -63,7 +63,7 @@ export default class Forms extends React.Component{
                     {this.state.emailError}
                  </div>
 
-                <p><button type="submit" p>Отправить</button></p>
+                <p><button type="submit">Отправить</button></p>
             </form>
         )
     }
