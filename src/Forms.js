@@ -31,7 +31,7 @@ export default class Forms extends React.Component{
 
     render(){
         return(
-            <form onSubmit={this.handleSubmit} name="contact"  method="POST" data-netlify="true">
+            <form onSubmit={this.handleSubmit}>
                 <p>
                     <input
                         type="number"
