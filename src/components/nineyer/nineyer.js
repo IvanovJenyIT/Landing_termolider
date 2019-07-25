@@ -3,13 +3,13 @@ import React from 'react';
 const NineYer = () => {
     return(
         <div  className="container nineyer-blok">
-            <p className='text-blu text-center'>Наши преимущества</p>
-            <p className='text-center'>почему выбирают нас</p>
-            <div className="row nineyer">
+            <p className='text-blu text-center'>Почему выбирают нас</p>
+                <div className="row nineyer">
                 <div className="col-12 col-md-5">
                     <div className="row">
-                        <div className="col-7 text-right nine">9</div>
-                        <div className="col-5 text-left nine-text"><p><span>лет</span><br/>успешной <br/>работы</p></div>
+                        <div className="col-4 text-right"><img alt="Термoлидер" src="/img/logo1-2.png" /></div>
+                        <div className="col-4 text-right nine"><p>9</p></div>
+                        <div className="col-4 text-left nine-text"><p><span>лет</span><br/>успешной <br/>работы</p></div>
                     </div>
                 </div>
                 <div className="col-12 col-md-7">

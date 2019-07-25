@@ -34,17 +34,18 @@ export default class Forma extends Component {
     render() {
         return (
             <div className='forma'>
-                <h3>Узнайте больше</h3>
+                <h3 className='text-firstList'>Заполните форму и мы подберем правильный вариант для вашего дома</h3>
+                <h3 className='text-foyou'>Закажите сейчас и получите скидку </h3>
                     <form
                       onSubmit={this.onSubmit}>
                     <input type='text'
                            onChange={this.onChangeRowN}
-                           placeholder='введите ваше имя'
+                           placeholder='ваше имя'
                            value={this.state.name}/>
                     <input type='text'
                            pattern="[0-9]{1,2}.[0-9]{1,2}.[0-9]{4}"
                            onChange={this.onChangeRowD}
-                           placeholder="введите ваш телефон"
+                           placeholder="ваш телефон"
                            value={this.state.data}
                     />
                    <button

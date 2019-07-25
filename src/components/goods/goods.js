@@ -4,8 +4,8 @@ import GoodsBlok from './goodsBlok'
 import GoodsMini from './goodsMini'
 import termApi from '../../constanty/constanty';
 
-
 import './goods.css'
+
 
 export default class Goods extends Component {
     id = 1;
@@ -15,16 +15,7 @@ export default class Goods extends Component {
         newsarr: ''
     };
 
-    // creat(name, description) {
-    //     return {
-    //         name,
-    //         description,
-    //         id: this.id++,
-    //         important: false,
-    //     }
-    // }
-
-    infogood = (id) => {
+   infogood = (id) => {
         this.setState(({goods}) => {
             const ind = goods.findIndex((el) => el.id === id);
             const newsel = goods[ind];
@@ -50,7 +41,7 @@ export default class Goods extends Component {
             return(
             <div className="container-fluid background-blu1 goods">
                 <div className="container">
-                    <p className="text-whiteh1 text-center">Товары</p>
+                    <p className="text-whiteh1 text-center">Наши товары</p>
                     <div className="row goods-max">
                         <div className="col-4 goodsBlok">
                             <ul>
@@ -71,9 +62,9 @@ export default class Goods extends Component {
                                <GoodsMini
                                    state={this.state}/>
                     </div>
-                </div>
-            </div>
 
+                  </div>
+            </div>
         )
     }
 

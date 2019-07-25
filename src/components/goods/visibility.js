@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const VisibilityBlok = ({state}) => {
     const {goods, visibiliti} = state;
     let visibilitiGood = goods.filter((el)=> el.id === visibiliti)
@@ -11,11 +12,11 @@ const VisibilityBlok = ({state}) => {
            <div>
                <img  src={`/img/slider/00${img}.png`} alt={name}/>
                <p className='title'>{name}</p>
-               <p>{desc}</p>
-               <p className='text-center'><button
-                   className="btn btn-light">
-                   Уточнить цену и наличие
-           </button></p>
+               <div>{desc}</div>
+               {/*<p className='text-center'><button*/}
+                   {/*className="btn btn-light">*/}
+                   {/*<SimpleModal/>*/}
+           {/*</button></p>*/}
 
 
            </div>

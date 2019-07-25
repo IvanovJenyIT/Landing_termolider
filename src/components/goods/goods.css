@@ -28,13 +28,23 @@
     margin-top: 40px;
 }
 
-.visibiliti img{
+.visibiliti img, .modal-img img{
     max-width: 50%;
     float: left;
     margin-right: 15px;
 }
 
-.visibiliti .title{
+@media screen and (max-width: 557px) {
+    .modal-img img{max-width: 100%; height: 250px; float: none;}
+    .modal-img{text-align: center;}
+}
+
+.modal-close{
+    float: right;
+    margin-top: -30px;
+}
+
+.visibiliti .title {
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 50px;
@@ -74,4 +84,17 @@
 
 .goods-mini img{
     max-width: 100%;
+}
+
+.slogan-white{
+    font-size: 2.7em;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-style: oblique;
+    font-family: Monotype Corsiva;
+}
+
+a {
+    color: #fff;
 }

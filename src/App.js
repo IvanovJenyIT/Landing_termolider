@@ -21,12 +21,20 @@ export default class  App extends Component {
                 <Logo/>
                 <Menu/>
                 <FirstList/>
-                <UTP/>
-                <FoYou/>
+                <UTP
+                id='utp'
+                />
+                <FoYou
+                    id='foyou'
+                />
                 <NineYer/>
-                <Goods />
+                <Goods
+                    id='goods'
+                />
                 <Foto/>
-                <Aboute/>
+                <Aboute
+                    id='aboute'
+                />
                 <Maps/>
                 <Copirait/>
             </div>

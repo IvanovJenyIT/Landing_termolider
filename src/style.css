@@ -11,23 +11,24 @@ p{
     border-top: 8px solid #0b68a9;
 }
 
-.background-blu1{
-    background-color:#0b68a9;
+.background-blu1 {
+    background-color: #0f72b7;
 }
 
-.background-blu2{
-    background-color:#0a5b93;
+.background-blu2 {
+    background-color: #0a5b93;
 }
-.background-blu3{
-    background-color:#16557c;
+
+.background-blu3 {
+    background-color: #16557c;
+}
+
+.background-maniblu {
+    background: linear-gradient(to left, #013453, #0f72b7);
 }
 
 .background-pink{
     background-color:#9dd5f6;
-}
-
-.background-maniblu{
-    background: linear-gradient(to left, #16557c, #0b68a9);
 }
 
 .text-white{
@@ -114,16 +115,21 @@ p{
 }
 
 .contacty p{
-    font-size: 22px;
+    font-size: 1.2em;
     line-height: 15px;
 }
 
-.menu p{
-    padding: 0px 20px 0px;
+.menu a{
+    padding: 10px 20px;
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 5px;
+    cursor: pointer
+}
+
+.menu a:hover{
+    color: #0b68a9!important;
 }
 
 .img-fon{
@@ -134,7 +140,12 @@ p{
 
 @media screen and (max-width: 767px) {
     .img-fon{background-color: #ddb091; background-image:none;}
-    .menu p {padding: 0px 5px 0px; font-size: 16px;}
+    .menu a {
+        padding: 0px 8px 0px;
+        font-size: 16px;
+        border-right: 1px solid #212529;
+        margin-top: 5px; }
+
 }
 
 .img-fon1 {
@@ -151,11 +162,8 @@ p{
 
 .img-blok img{
     max-width: 350px;
-}
-
-.img-blok{
-    margin-top: 35px;
-    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .slogan{
@@ -164,7 +172,7 @@ p{
     font-style: oblique;
     font-family: Monotype Corsiva;
     color: #4b4646;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     padding-top: 40px;
 }
@@ -177,13 +185,41 @@ p{
     line-height: 40px;
     text-align: center;}
     .img-blok{text-align: center;}
-    .background-maniblu  .container {width: 100%;
-        padding-right: 0px;
-        padding-left: 0px;
-        max-width: 100%;}
     .foyou .big{display: none;}
     .foyou .mini{display: block;}
     .aboute div + div {padding-left: 15px!important;}
+    .utp img {float: none!important;}
+    .foyou ul { margin-left: 30px;}
+}
+
+@media screen and (max-width: 991px) {
+    .background-maniblu .container {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+        max-width: 100%;
+    }
+
+    .nineyer {
+        background-position: 0% !important;
+    }
+
+    .img-fon .container {
+        max-width: 100%;
+    }
+
+    .container-fluid {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .background-blu1, .background-blu2 {
+        border-bottom: 4px solid white;
+    }
 }
 
 .conteiner-slider{
@@ -191,15 +227,22 @@ p{
 }
 
 .utp div{
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     font-size: 20px;
+}
+
+.utp div{
+    border-right: 4px solid white;
+}
+
+.utp .border-none{
+    border-right: 4px solid #fff0;
 }
 
 .utp i{
     margin-right: 10px;
 }
-
 .foyou ul{
     list-style: none;
     font-size: 24px;
@@ -243,12 +286,9 @@ p{
     padding-bottom: 20px;
 }
 
-.nineyer{
-    background-image: url("/img/logo1-2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 7%;
-}
+.nineyer img{
+    width: 100%;
+    }
 
 .nineyer .kube span{
     font-size: 26px;
@@ -256,11 +296,15 @@ p{
     font-weight: 600;
 }
 
-.nineyer .nine{
+.nineyer .nine p{
     font-size: 120px;
     font-weight: 600;
     color: #e01e1f;
     text-shadow: -5px 3px 4px #565050;
+}
+
+.nineyer .nine{
+    margin: auto 0;
 }
 
 .nineyer .nine-text p{
@@ -321,10 +365,15 @@ p{
     border-radius: 2px;
     margin: 5px 10px 12px 0px;
     height: 40px;
+    padding-left: 10px;
 }
 
 .forma button{
     width: 100%;
+}
+
+.forma h3{
+    font-size: 20px;
 }
 
 .width100 .forma {
@@ -338,7 +387,7 @@ p{
 }
 
 .width100 h3 {
-    font-size: 22px;
+    font-size: 18px;
     color: white;
 }
 
@@ -363,20 +412,38 @@ p{
 }
 
 .img-fon .width100 .forma {
-    top: 50%;
+    top: 60%;
 }
 
-.img-fon .width100 .forma input {
-    width: 47%;
-}
+/*.img-fon .width100 .forma input {*/
+    /*width: 47%;*/
+/*}*/
 
-.img-fon .width100 .forma button {
-    width: 96%;
-}
+/*.img-fon .width100 .forma button {*/
+    /*width: 96%;*/
+/*}*/
 
 @media screen and (max-width: 991px) {
-    .img-fon .width100 .forma input {width: 100%;}
-    .img-fon .width100 .forma {top: 44%;}
+    .img-fon .width100 .forma input {width: 46%;}
+    .img-fon .width100 .forma {top: 43%;}
+    .img-blok img{max-width: 300px;}
+    .width100 .forma{padding: 5px 0px 0px 15px;
+        margin-top: 22px;}
+    .slogan {font-size: 44px;
+        padding-top: 50px;
+        line-height: 45px;
+        width: 90%;
+    }
+    .slogan {font-size: 44px;
+        padding-top: 50px;
+        line-height: 45px;
+    }
+    .slogan {font-size: 44px;
+        padding-top: 50px;
+        line-height: 45px;
+    }
+
+
 }
 
 @media screen and (max-width: 634px) {
@@ -388,10 +455,11 @@ p{
     .width100 .forma input {width: 47%;}
     .width100 .forma button {width: 96%;}
     .width100 .forma {top: 68%;}
+
 }
 
 @media screen and (max-width: 459px) {
-    .menu p{font-size: 14px;}
+    .menu a{font-size: 14px;}
 }
 
 @media screen and (max-width: 384px) {
@@ -399,6 +467,20 @@ p{
     .width100 .forma button {width: 100%;}
 }
 
+.foyou .text-firstList, .img-fon1 .text-firstList{
+     display: none;
+ }
 
+.img-fon .text-foyou{
+    display: none;
+}
+
+
+@media screen and (min-width: 1400px) {
+    .img-blok img {
+    max-width: 450px;
+    margin-top: 180px;
+    margin-bottom: 80px;}
+}
 
 
