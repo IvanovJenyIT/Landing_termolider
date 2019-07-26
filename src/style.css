@@ -20,7 +20,11 @@ p{
 }
 
 .background-blu3 {
-    background-color: #16557c;
+    background-color: #0d5582;
+}
+
+.background-blu4 {
+    background-color: #013453;
 }
 
 .background-maniblu {
@@ -112,6 +116,7 @@ p{
 
 .contacty{
     padding-top: 20px;
+    color: #0b68a9;
 }
 
 .contacty p{
@@ -190,6 +195,7 @@ p{
     .aboute div + div {padding-left: 15px!important;}
     .utp img {float: none!important;}
     .foyou ul { margin-left: 30px;}
+    .nineyer .img-nineyer.text-center{text-align: right!important; padding: 15px;}
 }
 
 @media screen and (max-width: 991px) {
@@ -199,24 +205,19 @@ p{
         padding-left: 0px;
         max-width: 100%;
     }
-
     .nineyer {
         background-position: 0% !important;
     }
-
     .img-fon .container {
         max-width: 100%;
     }
 
-    .container-fluid {
-        padding-right: 0px;
-        padding-left: 0px;
+    .container .logo-blok  {
+        width: 100%;
     }
-
     .menu a {
         font-size: 16px;
     }
-
     .background-blu1, .background-blu2 {
         border-bottom: 4px solid white;
     }
@@ -240,9 +241,6 @@ p{
     border-right: 4px solid #fff0;
 }
 
-.utp i{
-    margin-right: 10px;
-}
 .foyou ul{
     list-style: none;
     font-size: 24px;
@@ -297,10 +295,12 @@ p{
 }
 
 .nineyer .nine p{
-    font-size: 120px;
+    font-size: 49px;
     font-weight: 600;
-    color: #e01e1f;
-    text-shadow: -5px 3px 4px #565050;
+    color: #009fe0;
+    text-shadow: 2px 1px 1px #09455e;
+    padding-bottom: 20px;
+
 }
 
 .nineyer .nine{
@@ -313,6 +313,10 @@ p{
     line-height: 26px;
     margin: auto 0;
     font-size: 22px;
+}
+
+@media screen and (max-width: 1199px) {
+    .nineyer .nine p {font-size: 40px;}
 }
 
 .nineyer .nine-text span{
@@ -336,6 +340,7 @@ p{
     padding: 20px;
     background-color: #f3f3f5;
     margin: 6px;
+    border-radius: 10px;
 }
 
 .nineyer .kube .col-md-6{
@@ -357,6 +362,7 @@ p{
     text-align: center;
     max-width: 400px;
     margin: 0px auto;
+
 }
 
 .forma input{
@@ -367,6 +373,10 @@ p{
     height: 40px;
     padding-left: 10px;
 }
+
+/*.img-fon input{*/
+    /*width: 90%;*/
+/*}*/
 
 .forma button{
     width: 100%;
@@ -415,14 +425,6 @@ p{
     top: 60%;
 }
 
-/*.img-fon .width100 .forma input {*/
-    /*width: 47%;*/
-/*}*/
-
-/*.img-fon .width100 .forma button {*/
-    /*width: 96%;*/
-/*}*/
-
 @media screen and (max-width: 991px) {
     .img-fon .width100 .forma input {width: 46%;}
     .img-fon .width100 .forma {top: 43%;}
@@ -442,7 +444,7 @@ p{
         padding-top: 50px;
         line-height: 45px;
     }
-
+    .nineyer img {max-height: 150px; width: auto!important;}
 
 }
 
@@ -467,20 +469,21 @@ p{
     .width100 .forma button {width: 100%;}
 }
 
-.foyou .text-firstList, .img-fon1 .text-firstList{
+.foyou .text-firstList, .foyou .text-foto,
+.img-fon1 .text-firstList, .img-fon1 .text-foyou,
+.img-fon .text-foto, .img-fon .text-foyou{
      display: none;
  }
 
-.img-fon .text-foyou{
-    display: none;
-}
-
-
 @media screen and (min-width: 1400px) {
     .img-blok img {
-    max-width: 450px;
-    margin-top: 180px;
-    margin-bottom: 80px;}
+        max-width: 450px;
+        margin-top: 180px;
+        margin-bottom: 80px;}
+}
+
+.contacty a, .aboute a {
+    color: #0b68a9 !important;
 }
 
 
