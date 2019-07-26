@@ -42,6 +42,8 @@
 .modal-close{
     float: right;
     margin-top: -30px;
+    font-size: 40px;
+    padding: 0px 22px 8px;
 }
 
 .visibiliti .title {
@@ -68,8 +70,8 @@
 @media screen and (max-width: 997px) {
     .goods-max{display: none;}
     .goods-mini{display: block;}
-    .text-modal p {font-size: 1.7em;}
-    .text-modal h3 {font-size: 2.75rem;}
+    .text-modal p, .text-modal ul li {font-size: 1.7em;}
+    .text-modal h3 {font-size: 2.95rem;}
 }
 
 .goods-mini .blok{
