@@ -12,6 +12,8 @@ function getModalStyle() {
         boxSizing: 'border-box',
         margin: '50px 15px',
         padding: '50px 30px 30px 30px',
+            overflow: 'auto',
+            height: '90vh'
         };
 }
 
@@ -58,7 +60,7 @@ export default function SimpleModal({props}) {
                    <button  className='modal-close' onClick={handleClose}>
                        х
                    </button>
-                   <div id="simple-modal-description">
+                   <div id="simple-modal-description" className="text-modal">
                        <p className="modal-img"><img  className="modal-img" src={`/img/slider/00${props.id}.png`} alt={props.name}/></p>
                        <h3 className='text-center'>{props.name}</h3>
                        <div>{desc}</div>

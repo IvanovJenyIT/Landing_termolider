@@ -68,6 +68,8 @@
 @media screen and (max-width: 997px) {
     .goods-max{display: none;}
     .goods-mini{display: block;}
+    .text-modal p {font-size: 1.7em;}
+    .text-modal h3 {font-size: 2.75rem;}
 }
 
 .goods-mini .blok{
@@ -98,3 +100,5 @@
 a {
     color: #fff;
 }
+
+

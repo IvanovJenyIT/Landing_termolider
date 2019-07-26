@@ -147,7 +147,7 @@ p{
     .img-fon{background-color: #ddb091; background-image:none;}
     .menu a {
         padding: 0px 8px 0px;
-        font-size: 16px;
+        font-size: 18px;
         border-right: 1px solid #212529;
         margin-top: 5px; }
 
@@ -196,7 +196,7 @@ p{
     .utp img {float: none!important;}
     .foyou ul { margin-left: 30px;}
     .nineyer .img-nineyer.text-center{text-align: right!important; padding: 15px;}
-}
+    }
 
 @media screen and (max-width: 991px) {
     .background-maniblu .container {
@@ -216,11 +216,12 @@ p{
         width: 100%;
     }
     .menu a {
-        font-size: 16px;
+        font-size: 18px;
     }
     .background-blu1, .background-blu2 {
         border-bottom: 4px solid white;
     }
+    p{font-size: 20px;}
 }
 
 .conteiner-slider{
@@ -373,10 +374,6 @@ p{
     height: 40px;
     padding-left: 10px;
 }
-
-/*.img-fon input{*/
-    /*width: 90%;*/
-/*}*/
 
 .forma button{
     width: 100%;
